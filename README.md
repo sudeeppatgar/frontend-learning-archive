@@ -101,9 +101,3 @@ Then open the local URL shown in terminal (usually `http://localhost:5173`).
 - Some projects are UI-focused prototypes and may not include backend integration.
 - Asset-heavy folders are included intentionally for practice.
 
-## Future Improvements
-
-- Add screenshots/GIF previews for each project.
-- Add per-project README with features and learning outcomes.
-- Standardize naming conventions (`kebab-case`) and folder consistency.
-- Add one root script/tooling setup for easier project discovery.
