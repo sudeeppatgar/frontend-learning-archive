@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form>
+            <H1>LOGIN FORM</H1>
+            <label for="username">Username:</label><br>
+            <input type="text" placeholder="username" id="username" required><br>
+            <label for="email">email:</label><br>
+            <input type="email" placeholder="enter your email" id="email"  required><br>
+            <label for="password">password:</label><br>
+            <input type="password" placeholder="password" id="password"  required><br>
+            <label for="gender">Select Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">female
+            <input type="radio" id="other" name="gender" value="other">other
+            <br>
+            <label for="country">Select Country:</label>
+             <select name="country" id="country">
+             <option value="India">India</option>
+             <option value="China">China</option>
+             <option value="Canada">Canada</option>
+             <option value="japan">japan</option>
+            </select><br>
+            <button onclick=validate()>Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

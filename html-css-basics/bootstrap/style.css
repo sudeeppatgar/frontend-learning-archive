@@ -1,0 +1,23 @@
+a.navbar-brand3{
+    margin: 0px 70px 0px 0px;
+}
+
+/* p{
+color: aliceblue;
+padding: 5px 0px;
+margin: 0px 0px;
+font-weight: 700;
+} */
+/* div.demo{
+    margin:70px;
+} */
+
+#myCarousel{
+    margin-top: 56px;
+}
+.card {
+    background-size: cover; /* or contain */
+    background-position: center;
+    height: 100%;
+  }
+

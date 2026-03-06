@@ -1,0 +1,104 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.header{
+    display: flex;
+    background: rgb(255, 255, 255);
+    border: 10px solid rgb(172, 89, 89);
+    height: 56px;
+    ;
+    justify-content: space-between;
+    border-color:rgb(255, 255, 255) ;
+}
+.sub1{
+    display: flex;
+    /* border: 1px solid black; */
+    /* width: 30%; */
+    margin: 10px;
+
+}
+.find{
+    display: flex;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-color: whitesmoke;
+
+}
+.box1{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    
+
+}
+.find input{
+    display: flex;
+    width: 95%;
+    background-color: whitesmoke;
+    border: none;
+}
+.find img{
+    height: 65%;
+    border-color: whitesmoke;
+   
+}
+.sub2{
+     display: flex;
+     align-items: center;
+
+     /* border: 1px solid black; */
+    
+     
+}
+.box2{
+    display: flex;
+    /* align-items: center; */
+    border: 3px solid white;
+    border-right: lightgray;
+    /* margin: 4px; */
+
+}
+.box2 img{
+    /* width: 40%; */
+    height: 50%; 
+    margin-right: 6px;
+    
+}
+.box3{
+    display: flex;
+    /* border: 1px solid black; */
+    /* align-items: center; */
+}
+.box3 img{
+    height: 50%; 
+    /* width: 45%; */
+}
+.text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    color: black;
+   
+}
+.text span{
+    font-size: 15px;
+   
+}
+.text p{
+    margin-top: 2px;
+}
+.bell1{
+    width: 30px;
+}
+.bell{
+    width: 20px;
+    border-right: 1px solid black;
+}

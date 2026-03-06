@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>bootstrap</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PARVATHI WRITER'S WORLD</a>
+            <a class="navbar-brand" href="#">HOME</a>
+            <a class="navbar-brand" href="#">CONTACT US</a>
+            <a class="navbar-brand" href="#">SUPPORT</a>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <!-- Button trigger modal -->
+                <!-- <button class="btn btn-primary me-md-2" data-bs-toggle="modal" data-bs-target="#loginModal"
+                    type="button">Login</button> -->
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+                    type="button">Login</button>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="login-email" placeholder="name@example.com"
+                                required>
+                            <label for="login-email">Email address</label>
+                            <div class="invalid-feedback" id="login-email-error"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="login-password" placeholder="Password"
+                                required>
+                            <label for="login-password">Password</label>
+                            <div class="invalid-feedback" id="login-password-error"></div>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                <pre class="form-check-label" for="gridCheck1">Remember Me                             <a data-bs-toggle="modal"
+                                    data-bs-target="#forgotModal" data-bs-dismiss="modal">Forgot password</a></pre>
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary mb-3" id="login-button" type="submit">Login</button>
+                        <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+                    </form>
+                    <label class="form-check-label" for="gridCheck1">Don't have an account ?<a data-bs-toggle="modal"
+                            data-bs-target="#signupModal" data-bs-dismiss="modal">Register</a></label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sign up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SIGN UP</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form id="register-form">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="register-email" name="email"
+                                placeholder="name@example.com" required>
+                            <label for="register-email">Email address</label>
+                            <div class="invalid-feedback" id="register-email-error"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="register-password" placeholder="Password"
+                                required>
+                            <label for="register-password">Password</label>
+                            <div class="invalid-feedback" id="register-password-error"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="register-confirm-password"
+                                placeholder="Confirm Password" required>
+                            <label for="register-confirm-password">Confirm Password</label>
+                            <div class="invalid-feedback" id="register-confirm-password-error"></div>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" id="gridCheck2">
+                            <label class="form-check-label" for="gridCheck2">
+                                <p>I agree to the terms & conditions</p>
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary mb-3" id="register-button"
+                            type="submit">Register</button>
+                    </form>
+                    <label class="form-check-label" for="gridCheck2">Already have an account ?<a data-bs-toggle="modal"
+                            data-bs-target="#loginModal" data-bs-dismiss="modal">Login</a></label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--forgot password Modal -->
+    <div class="modal fade" id="forgotModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FORGOT PASSWORD</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form id="forgot-form">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="forgot-email" placeholder="name@example.com">
+                            <label for="forgot-email">Registered Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="forgot-otp" placeholder="Password">
+                            <label for="forgot-otp">Enter OTP</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                data-bs-dismiss="modal">Resend OTP </a>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="forgot-password"
+                                placeholder="Confirm Password">
+                            <label for="forgot-password">Enter Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="forgot-confirm-password"
+                                placeholder="Confirm Password">
+                            <label for="forgot-confirm-password">Confirm Password</label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary mb-3" id="forgot-button"
+                            type="submit">submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- demo page  -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/education.jpg" class="d-block w-100" alt="..." width="800" height="600">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/food.jpg" class="d-block w-100" alt="..." width="800" height="600">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/business.jpg" class="d-block w-100" alt="..." width="800" height="600">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- demo exm  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div
+                    class="web-planning row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Wikipedia</strong>
+                        <h3 class="mb-0">Web planning </h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Planning is the process of thinking regarding the activities required to
+                            achieve a desired goal. Planning is based on foresight, the fundamental capacity for mental
+                            time travel.</p>
+                        <a href="https://en.wikipedia.org/wiki/Project_planning" class="stretched-link">Continue reading</a>
+                        <!-- data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" -->
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="images/planning.avif" alt="" class="bd-placeholder-img" width="200" height="250"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="web-designing row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-relative">
+                        <strong class="d-inline-block mb-2 text-success">Wikipedia</strong>
+                        <h3 class="mb-0">Web Design</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Web design encompasses many different skills and disciplines in the
+                            production and maintenance of websites. The different areas of web design include web
+                            graphic design.</p>
+                        <a href="https://en.wikipedia.org/wiki/Web_design" class="stretched-link">Continue reading</a>
+                        <!-- data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" -->
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="images/web-design.avif" alt="" class="bd-placeholder-img" width="200" height="250"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div
+                    class="web-coding row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Wikipedia</strong>
+                        <h3 class="mb-0">Web developer</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">A web developer is a programmer who develops World Wide Web applications
+                            using a client–server model. The applications typically use HTML, CSS, and JavaScript in the
+                            client. </p>
+                        <a href="https://en.wikipedia.org/wiki/Web_developer" class="stretched-link">Continue reading</a>
+                        <!-- data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal"> -->
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="images/coding.avif" alt="" class="bd-placeholder-img" width="200" height="250"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="web-testing row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Wikipedia</strong>
+                        <h3 class="mb-0">Web testing</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">Web testing is software testing that focuses on web applications. Complete
+                            testing of a web-based system before going live can help address issues before the system is
+                            revealed to the public.</p>
+                        <a href="https://en.wikipedia.org/wiki/Web_testing" class="stretched-link">Continue reading</a>
+                        <!-- data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" -->
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="images/testing.avif" alt="" class="bd-placeholder-img" width="200" height="250"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- demo exm 2 -->
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('images/nature.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">NATURE</h2>><h4>study about the nature aroud the
+                        world..</h4>
+                    <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        data-bs-dismiss="modal">View All</a>
+
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="images/nature.jpg" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <h5>now</h5>
+                            <!-- <small>now</small> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('images/stories.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">STORIES</h2>><h4>Read different stories aroud the
+                        world..</h4>
+                    <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        data-bs-dismiss="modal">View All</a>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="images/stories.jpg" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <h5>1d</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('images/vehicle.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">VEHICLES</h2>><h4>learn about different vehicles
+                        aroud the world..</h4>
+                    <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        data-bs-dismiss="modal">View All</a>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="images/vehicle.jpg" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <h5>1d</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('images/travel.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TRAVEL</h2>><h4>traveling aroud the world..</h4>
+                    <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        data-bs-dismiss="modal">View All</a>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="images/travel.jpg" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <h5>2d</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('images/temple.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TEMPLES</h2>><h4>diffent temples aroud the world..
+                    </h4>
+                    <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        data-bs-dismiss="modal">View All</a>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="images/temple.jpg" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <h5>9d</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('images/space.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SPACE</h2>><h4>Learn about the space ..</h4>
+                    <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        data-bs-dismiss="modal">View All</a>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="images/space.jpg" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <h5>22d</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Row END -->
+    <footer>
+                <div class="footersome">
+                    <a target="_blank" href="https://www.youtube.com/@w3schools" title="W3Schools on YouTube"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/w3schools.com/" title="W3Schools on LinkedIn"><i class="fa"></i></a>
+                    <a target="_blank" href="https://discord.gg/6Z7UaRbUQM" title="Join the W3schools community on Discord"><i class="fa"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/w3schoolscom/" title="W3Schools on Facebook"><i class="fa"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/w3schools.com_official/" title="W3Schools on Instagram"><i class="fa"></i></a>
+                    <div class="w3-hide-large" style="margin-top:16px"></div>
+                    <a target="_blank" href="/forum/default.asp" title="Forum" class="textlink">FORUM</a>
+                    <a target="_blank" href="/about/default.asp" title="About W3Schools" class="textlink">ABOUT</a>
+                    <a target="_blank" href="https://93d08a94.sibforms.com/serve/MUIFANcgnq870f9dSud-FqpyiNiT9Hf7Neaxms0MYk3Vls9hpjaXTEbv0c7uVF1UINWpqSDY6_DU9rogV4HkwIgRhxwVUZlYeU0k9Dk0zvK_WPtcqT1M0CwXtaF7OArmb7PqlsHk1AHCM6p4pNVtMTNOatAnIusfNWfUNfoolqkk7FLimIaFVN71kSMBOdLIwkagkBw9XybFEG0G" title="Contact us about Classroom plans" class="textlink">CLASSROOM</a>
+                  </div>
+    </footer>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+       <!-- Option 2: Separate Popper and Bootstrap JS  -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ 
+    <script>
+        // Login form validation
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // prevent form submission
+
+            // Get the form fields
+            const emailInput = document.getElementById("login-email");
+            const passwordInput = document.getElementById("login-password");
+
+            // Reset error messages
+            document.getElementById("login-email-error").innerHTML = "enter a valid email";
+            document.getElementById("login-password-error").innerHTML = "password is incorrect";
+
+            // Check if the form fields are filled
+            if (emailInput.value.trim() === "") {
+                // Show an error message if email input is empty
+                document.getElementById("login-email-error").innerHTML = "Please enter your email";
+            } else if (!validateEmail(emailInput.value)) {
+                // Show an error message if email input is invalid
+                document.getElementById("login-email-error").innerHTML = "Please enter a valid email";
+            }
+            if (passwordInput.value.trim() === "") {
+                // Show an error message if password input is empty
+                document.getElementById("login-password-error").innerHTML = "Please enter your password";
+            }else if (!validatePassword(passwordInput.value)) {
+                // Show an error message if password input is invalid
+                document.getElementById("login-password-error").innerHTML = "Please enter a valid email";
+            }
+
+            // If no errors, submit the form
+            if (emailInput.value.trim() !== "" && validateEmail(emailInput.value) && passwordInput.value.trim() !== "" && validatePassword(passwordInput.value) ){
+                // Redirect to home page if form fields are filled correctly
+                window.location.href = "home.html";
+            }
+        });
+
+        // Register form validation
+        document.getElementById("register-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // prevent form submission
+
+            // Get the form fields
+            const emailInput = document.getElementById("register-email");
+            const passwordInput = document.getElementById("register-password");
+            const confirmPasswordInput = document.getElementById("register-confirm-password");
+
+            // Reset error messages
+            document.getElementById("register-email-error").innerHTML = "";
+            document.getElementById("register-password-error").innerHTML = "";
+            document.getElementById("register-confirm-password-error").innerHTML = "";
+
+            // Check if the form fields are filled
+            if (emailInput.value.trim() === "") {
+                // Show an error message if email input is empty
+                document.getElementById("register-email-error").innerHTML = "Please enter your email";
+            } else if (!validateEmail(emailInput.value)) {
+                document.getElementById("register-email-error").innerHTML = "Please enter a valid email";
+            }
+
+            if (passwordInput.value.trim() === "") {
+                // Show an error message if password input is empty
+                document.getElementById("register-password-error").innerHTML = "Please enter your password";
+            }
+
+            if (confirmPasswordInput.value.trim() === "") {
+                // Show an error message if confirm password input is empty
+                document.getElementById("register-confirm-password-error").innerHTML = "Please confirm your password";
+            }
+            if (emailInput.value.trim() !== "" && validateEmail(emailInput.value) && passwordInput.value.trim() !== "" && confirmPasswordInput.value.trim() === "") {
+                // Redirect to home page if form fields are filled correctly
+                window.location.href = "home.html";
+            }
+            //   else if (passwordInput.value.trim
+        });
+    </script>
+</body>
+
+</html>

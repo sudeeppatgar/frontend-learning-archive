@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    background-color: #ffff;
+}
+body{
+    /* width: 100%; */
+    display:contents;
+}
+
+.body{
+    background-color: #ffff;
+    border: 1px soild black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100vh; 
+}
+.b-1{
+    border-bottom: 1px solid lightgray;
+    flex: 1;
+}
+.b1-1{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home{
+    display: flex;
+}
+.home img{
+    width: 50px;
+    /* height: 30px; */
+    margin-left: 10px;
+}
+.home-n{
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+.home-n img{
+    width: 25px;
+    margin-right: 10px;
+}
+.home-n p{
+    margin-right: 10px;
+}
+.home-btn button{
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: 1px solid gray;
+    margin-right: 40px;
+    text-align: center;
+    font-size: large;
+}
+.b-2{
+    border-bottom: 1px solid lightgray;
+    flex: 1;
+    display: flex ;
+    align-items: center; 
+}
+.atag{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 10px;
+}
+.atag a{
+    margin-right: 30px;
+    color: gray;
+    text-decoration: none;
+}
+.b-3{
+    border-bottom: 1px solid lightgray;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.b-3 h2{
+    margin: 20px 840px 5px 0px;
+}
+.ex-do{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    margin-left: 10px;
+}
+.ex-do p{
+    color: gray;
+    font-size:23px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.btn button{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #ffff;
+    color: black;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.btn img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.totals{
+    display: flex;
+}
+.total{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin:0px 10px 20px 10px;
+    background-color: white;
+}
+.t-img{
+    width: 50px;
+    height:40px ;
+    background-color: #ffff;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t-img img{
+    width: 30px;
+}
+.t-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:start ;
+}
+.t-txt p{
+    color: gray;
+}
+.b-4{
+    flex: 8;
+    display: flex;
+    flex-direction:column;
+}
+.b4-btn{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 10px;
+}
+.b4-btn button{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.b4-btn img{
+    width: 20px;
+    margin: 5px;
+}
+table{
+    width: 100%;
+}
+thead td{
+    height: 50px;
+    color: gray;
+    background-color: rgb(243, 241, 241);
+}
+tbody td{
+    color: rgb(87, 86, 86);
+}
+td{
+    height: 54px;
+}
+.name1{
+    text-align: start;
+}
+.name1 input{
+    margin: 0px 30px;
+    accent-color: white;
+}
+.name{
+    display: flex;
+    align-items: center;
+    color: rgb(27, 27, 27);
+}
+.name input{
+    margin: 0px 30px;
+    accent-color: white;
+}
+.opp{
+    text-align: start;
+    color: rgb(110, 109, 109);
+}
+.opp img{
+    width: 60px;
+    height:60px
+}
+.st-div{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1px solid rgb(231, 231, 231);
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+.st-div button{
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:#ffff;
+    color: green;
+}
+.st-div img{
+    background-color: lightgreen;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+.in-div{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1px solid rgb(231, 231, 231);
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+.in-div button{
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:#ffff;
+    border-left: 0.1px solid lightgray;
+    color: red;
+}
+.in-div img{
+    background-color: lightcoral;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}    
+.memid{
+    color: rgb(27, 27, 27);
+}
+.r-2 td{
+    background-color: rgb(243, 241, 241);
+}

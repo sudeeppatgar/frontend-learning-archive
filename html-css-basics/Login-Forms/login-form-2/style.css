@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.d1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height:400px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25)
+}
+form{
+    margin-left:60px;
+    align-content: center;
+    width: 400px;
+    height:400px;
+}
+.head{
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    flex-direction: row;
+}
+h2{
+    padding-top: 25px;
+    margin-right: 150px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: grey;
+    padding-bottom:30px;
+}
+.h2{
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+}
+/* i{
+    padding-left: 20px;
+} */
+label{
+    font-weight: 800;
+    margin-bottom:40px;
+}
+input{
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    padding-left:30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(221, 217, 217);
+}
+button{
+    border: none;
+    border-radius: 20px;
+    width: 330px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(250, 30, 67);
+    color: white;
+}
+#checkbox{
+    accent-color:rgb(250, 30, 67) ;
+    width: 15px;
+    height: 15px;
+    align-items: flex-start;
+    margin:20px 5px 0px 0px;
+}
+span{
+color: rgb(250, 30, 67) ;
+margin-right:60px;
+margin-bottom: 10px;
+}
+a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: grey;
+}
+.d2{
+    width: 420px;
+    height:400px;
+    background-color: rgb(250, 30, 67);
+    align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#btn2{
+    font-size: 15px;
+    width: 100px;
+    margin-top: 20px;
+    border:1px solid white;
+    width:80px;
+}

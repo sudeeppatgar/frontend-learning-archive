@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reg">
+        <div class="formbox">
+            <div class="botton-box">
+                <!-- <div id="btn"></div> -->
+                <button type="button" class="toggle-btn"onclick="login()">LOGIN</button>
+                <button type="button" class="toggle-btn"  onclick="register()">REGISTER</button>
+        </div>
+            <div class="social-icon">
+                <img src="google.png" alt="google">
+                <img src="facebook.png" alt="facebook">
+                <img src="twitter.png" alt="twitter">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <pre><input type="checkbox" class="check-box">Rember password                     <a href="forgot.html">forget password ?</a></pre>
+                <button type="submit" class="submit-btn" id="redirect-button2" >LOGIN</button>
+                <pre id="dont">don't have an account ?  <a href="index.html">Register</a></pre>
+            </form>
+            <form id="register" class="input-group">
+                <input type="email" class="input-field" placeholder="Email Address" required>
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                 <pre><input type="checkbox" class="check-box">  I agreed to the terms & conditions</pre>
+                <button type="submit" class="submit-btn" id="redirect-button">REGISTER</button>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        var x= document.getElementById("login")
+        var y= document.getElementById("register")
+        var z= document.getElementById("btn")
+
+        function register(){
+            x.style.left="-400px"
+            y.style.left="50px"
+            // z.style.left="110px"
+        }
+        function login(){
+            x.style.left="50px"
+            y.style.left="400px"
+            // z.style.left="110px"
+        }
+    //      document.getElementById("redirect-button").addEventListener("click", function() {
+    //      window.location.href = "home.html";
+    // });
+    // document.getElementById("redirect-button2").addEventListener("click", function() {
+    //      window.location.href = "home.html";
+    // });
+// document.getElementById("redirect-button").addEventListener("click", function() {
+//   var inputValue = document.getElementById("register").value;
+//   if (inputValue) {
+//     window.location.href = "home.html";
+//   }
+// });
+// document.getElementById("redirect-button").addEventListener("click", function() {
+//   var inputValue = document.getElementById("login").value;
+//   if (inputValue) {
+//     window.location.href = "home.html";
+//   }
+// });
+document.getElementById("redirect-button").addEventListener("click", function(event) {
+    event.preventDefault(); // prevent the form from submitting
+    var email = document.querySelector("#register input[type='email']").value;
+    var username = document.querySelector("#register input[type='text']").value;
+    var password = document.querySelector("#register input[type='password']").value;
+
+    if (email && username && password) {
+        window.location.href = "home.html";
+    } else {
+        alert("Please fill all the fields");
+    }
+});
+document.getElementById("redirect-button2").addEventListener("click", function(event) {
+    event.preventDefault(); // prevent the form from submitting
+    var username = document.querySelector("#login input[type='text']").value;
+    var password = document.querySelector("#login input[type='password']").value;
+
+    if (username && password) {
+        window.location.href = "home.html";
+    } else {
+        alert("Please fill all the fields");
+    }
+});
+    </script>
+</body>
+</html>

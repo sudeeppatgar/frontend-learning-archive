@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    margin-top: 40px;
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    border: 1px solid black;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 div{
+    width: 450px;
+    height: 60px;
+    border: 1px solid black;
+}
+.box2{
+    border: 1px solid black;
+    flex:4;
+    display: flex;
+}
+.b1{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+}
+.b1-1{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.b1-1-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b1-1-2{
+    border: 1px solid black;
+    flex: 4;
+    display: flex;
+}
+.b1-1-2-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b1-1-2-2{
+    border: 1px solid black;
+    flex: 1;
+}
+
+.b1-2{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.b2{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.b2-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b2-2{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+}
+.b2-2-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b2-2-2{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.b2-2-2-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b2-2-2-2{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+}
+.b2-2-2-2-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b2-2-2-2-2{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.b2-2-2-2-2-1{
+    border: 1px solid black;
+    flex: 1;
+}
+.b2-2-2-2-2-2{
+    border: 1px solid black;
+    flex: 1;
+}

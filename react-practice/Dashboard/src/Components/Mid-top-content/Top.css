@@ -1,0 +1,100 @@
+.contents{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  .top-content2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aliceblue;
+    /* border: 2px solid black; */
+  }
+ .top-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    /* background-color: aliceblue; */
+    /* border: 2px solid black; */
+    margin: 0 30px;
+ }
+.Top-main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    background: white;
+
+    border-radius: 10px;
+}
+.finance{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+.finance img{
+    width: 30px;
+}
+.finance p{
+    /* color: gray; */
+    font-size: 1.1rem;
+}
+.Top-main-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Top-main-2{
+    display: flex;
+    gap: 5px;
+}
+.Top-main-2 p{
+    font-size: 1rem;
+}
+.Top-main-2-1{
+    /* border: 1px solid rgba(0, 0, 0, 0.192); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: black;
+}
+.Top-main-2-2{
+    border-left: 1px solid rgba(0, 0, 0, 0.192);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: black;
+}
+.Top-main-2-2 p{
+    margin-left: 30px;
+}
+.Top-main-2-3{
+    border-left: 1px solid rgba(0, 0, 0, 0.192);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: black;
+}
+.Top-main-2-3 p{
+    margin-left: 30px;
+}
+.set-span{
+    /* font-size: 15px; */
+    color: rgba(128, 128, 128, 0.938);
+    /* margin-left: 30px; */
+}
+.Top-main-2 p{
+   font-size: 12.5px;
+} 

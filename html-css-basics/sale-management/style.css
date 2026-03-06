@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    border: 1px soild black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100vh; */
+}
+.b-1{
+    /* border: 1px solid black; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.home img{
+    width: 40px;
+    height: 40px;
+}
+.home-n{
+    display: flex;
+    align-items: center;
+}
+.home-n img{
+    width: 20px;
+    margin-right: 10px;
+}
+.home-n p{
+    margin-right: 10px;
+}
+.b-2{
+    /* border: 1px solid black; */
+    flex: 1;
+    display: flex ;
+    align-items: center; 
+    margin-left: 10px;
+}
+.atag{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.atag a{
+    margin-right: 30px;
+    color: gray;
+    text-decoration: none;
+}
+.b-3{
+    /* border: 1px solid black; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.b-3 h2{
+    margin: 20px 0px 5px 10px;
+}
+.ex-do{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    margin-left: 10px;
+}
+.btn{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+}
+.btn button{
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.btn img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.totals{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.total{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin:0px 10px 20px 10px;
+    background-color: white;
+}
+.t-img{
+    width: 50px;
+    height:40px ;
+    background-color: #ffff;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t-img img{
+    width: 30px;
+}
+.b-4{
+    /* border: 1px solid black; */
+    flex: 8;
+    display: flex;
+    flex-direction:column;
+}
+.b4-btn{
+    flex: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px 0px 10px 10px;
+}
+.b4-btn button{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.b4-btn img{
+    width: 20px;
+    margin: 5px;
+}
+.b4-body{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+.active{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.inactive{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+.name{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.name input{
+    margin: 0px 10px;
+}
+.opp{
+    /* border: 1px solid black; */
+    width: 165.33px;
+    display: flex;
+    align-items: center;
+}
+.stat{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.st-div{
+    width: 60px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+.st-div button{
+    height: 25px;
+    border: none;
+    background-color:#ffff;
+}
+.st-div img{
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+}
+.in-div{
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: lightcoral;
+}
+.in-div button{
+    height: 25px;
+    border: none;
+    background-color:#ffff;
+}
+.in-div img{
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+}
+.memid{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}

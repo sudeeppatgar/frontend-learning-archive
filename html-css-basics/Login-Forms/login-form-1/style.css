@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    border: 3px solid black;
+    width:max-content;
+    margin-top: 80px;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px;
+}
+form{
+    margin: 10px 20px 10px 100px;
+    width: 300px;
+}
+H1{
+    
+    text-decoration: underline;
+    font-weight: bolder;
+}
+input{
+    height: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#username{
+    height: 30px;
+    width: 200px;
+}
+#password{
+    height: 30px;
+    width: 200px;
+}
+#email{
+    height: 30px;
+    width: 200px;
+}
+label{
+    font-weight: bold;
+    font-size: medium;
+}
+button{
+    margin:20px 0 10px 60px;
+    background-color: gray;
+    height:30px;
+    width:60px;
+    border-radius: 10px;
+}

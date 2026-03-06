@@ -1,0 +1,77 @@
+.popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+.log-a{
+    width: 40%;
+    height:90%; 
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.log-b{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: 20px;
+    font-family: sans-serif;
+}
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: lightgray;
+    width: 531px;
+    height: 564px;
+}
+
+h2 {
+    text-align: start;
+    margin-bottom: 20px;
+}
+.w-img{
+    display: flex;
+    justify-content: space-between;
+}
+.w-img img{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+label {
+    display: flex;
+    margin-top: 10px;
+    color: grey;
+    font-weight: 300;
+}
+.inp {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 29px;
+    width: 509px;
+    outline: none;
+    
+}
+.l-btn {
+    width: 120px;
+    padding: 8px;
+    border: none;
+    margin-top: 15px;
+    background-color: #288ec5;
+    color: white;
+    border-radius: 10px;
+    height: 45px;
+    margin-left: 2px;
+    font-size: 20px;
+    text-align: center;
+}
